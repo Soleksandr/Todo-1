@@ -1,0 +1,194 @@
+ html {
+    height: 100%;
+    background-image: linear-gradient(white, rgb(14, 19, 65));
+}
+
+
+body {
+    
+    width: 50%;
+    min-height: 90%;
+    margin: auto;
+    background: rgb(214, 213, 207);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    
+}
+
+h1 {
+    padding-left: 30px;
+    color: rgb(48,48,93);
+    font-family: sans-serif;
+}
+
+#shapka {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+button {
+    margin-right: 30px;
+    padding: 0;
+    border-radius: 20px;
+    border: none;
+    width: 32px;
+    height: 32px;
+    font-size: 1.9em;
+    background-color: rgb(50,50,93);
+    text-align: center;
+    color: white;
+}
+
+.buttonDel {
+    /* background: url('imag/дел.jpg'); */
+    color: rgb(236, 144, 144);
+    font-size: 3.5em;
+    align-self: center;
+    height: 21px;
+    width: 21px;
+    border-radius: 12px;
+    background: rgb(214, 213, 207);
+    transform: rotate(45deg);
+    margin-bottom: 36px;
+    margin-left: 20px;
+}
+
+#ochistit {
+    height: auto;
+    width: auto;
+    background: none;
+    color: rgb(135,135,135)
+}
+
+
+li {
+    border-bottom: 1px inset rgb(189, 189, 223);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.divLi {
+    display: flex;
+    justify-content: flex-start;
+    overflow-wrap: break-word;
+    align-items: center;
+    
+}
+
+.divDataDel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[type="text"] {
+    margin-left: 30px;
+    padding: 10px 10px;
+    background: rgb(214, 213, 207);
+    border: none;
+    color: rgb(27, 27, 27);
+    transition-duration: 50ms;
+    width: 58%;    
+}
+
+/* input[type="text"]:hover {
+    border: 1px solid rgb(135, 194, 248);
+    background: rgb(179, 237, 250);
+    box-shadow: 5px 3px 4px 2px rgb(101, 98, 250);
+    width: 58%;
+} */
+
+input[type="checkbox"] {
+    align-self: center;
+    
+}
+
+span {
+   
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+   
+}
+
+.textSpan {
+    max-width: 278px;
+    font-family: sans-serif;
+}
+
+.newText {
+  align-self: center
+}
+
+.spanData {
+    align-self: center;
+    width: 138px;
+    
+}
+
+input[type= 'checkbox'] {
+display: none;
+}
+
+label {
+    position: relative;
+}
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 1px solid rgb(154, 160, 175);
+    border-radius: 12px;
+    
+}
+
+label::after {
+    content: "";
+    display: inline-block;
+    height: 7px;
+    width: 13px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 6px;
+    top: 6px;
+    
+}
+
+input[type = 'checkbox'] + label::after {
+    content: none;
+}
+
+
+input[type = 'checkbox']:checked + label::after {
+    content: "";
+}
+
+
+
+input[type = 'checkbox']:checked + label::before {
+    background-color:rgb(131, 209, 88);
+}
+
+::-webkit-input-placeholder {
+    font-family: cursive;
+    font-style: italic;
+}
+
+#foot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 715px;
+       
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
